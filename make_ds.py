@@ -110,7 +110,7 @@ economy_data = [
 full_data = science_data + economy_data
 
 # JSONL 파일로 저장
-with open("sft_science_economy_100.jsonl", "w", encoding="utf-8") as f:
+with open("dataset.jsonl", "w", encoding="utf-8") as f:
     for entry in full_data:
         f.write(json.dumps(entry, ensure_ascii=False) + "\n")
 
